@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>stein, saks pappir</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="multiplayerkampstyle.css">
+        <script src="/socket.io/socket.io.js"></script>
+        <script>const socket = io();</script>
+    </head>
+    <body>
+      <h1>Stein, Saks, Papir</h1>
+      <div id = "spillerpoeng">
+      <h2 id = spillerresultatvis>Spiller: </h2><h2 id = spilerpoengvis>Velg ett alternativ til å begynne</h2></div>
+      <div id="spillerpoeng">
+      <h2 id = maskinresultatvis>Maskin: </h2><h2 id = "maskinpoengvis"></h2>
+       </div>
+       <h2>
+        <button id = "restart">start på nytt</button></h2>
+      <input id = "stein"type="image" src="rock.png" alt=""> <!-- Steinbilde -->
+      <input id = "papir"type="image" src="paper.png" alt=""> <!-- Papirbilde -->
+      <input id = "saks"type="image" src="scissors.png" alt=""> <!-- Saksbilde-->
+      <img id = "maskinvisning"src="scissors.png" alt=""> <!-- maskinvisning-->
+        <script src="multiplayerkamp.js" async defer></script>
+    </body>
+    <script>
+      // client-side
+      socket.on("connect", () => {
+        socket.emit("melding", "Connected")
+      });
+
+      socket.on("disconnect", () => {
+        console.log(socket.id); // undefined
+      });
+      
+    </script>
+</html>

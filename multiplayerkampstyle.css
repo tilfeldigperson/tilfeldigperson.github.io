@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#stein {
+    height: 200px;
+    /*utseene for stein*/
+}
+#papir {
+    height: 200px;
+    /*utseene for papir*/
+}
+#saks {
+    height: 200px;
+    /*utseene for saks*/
+}
+#saks:hover {
+    border-style: dotted;
+    border-color: gray;
+    border-radius: 40px;
+    /*utseene for saks*/
+}
+#papir:hover {
+    border-style: dotted;
+    border-color: gray;
+    border-radius: 40px;
+    /*utseene for papir*/
+}
+#stein:hover {
+    border-style: dotted;
+    border-color: gray;
+    border-radius: 40px;
+    /*utseene for steinbildet*/
+}
+input[type="image"]:active {
+filter: invert(100%);
+}
+body {
+    background-color: #2A282A;
+    /*bakgrunnsfargen til nettsiden */
+}
+h1 {
+    font-size: 60px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #74DAE2;   
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    /*her er css koden til overskriften */
+}
+#maskinvisning {
+    padding-left: 100px;
+    height: 200px;
+}
+h2 {
+        font-size: 60px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #74DAE2;   
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        /*her er css koden til overskriften */
+    
+}
+#spillerpoeng {
+    display: flex;
+    justify-content: center;
+}
+
+#restart{
+    font-size: 60px;
+    color: #74DAE2;  
+    background-color: #2A282A;
+    border-color: #2A282A;
+    /*utseene til restart knappen */
+}
+#return{
+    font-size: 60px;
+    color: #74DAE2;  
+    background-color: #2A282A;
+    border-color: #2A282A;
+}
+#center{
+    text-align: center;
+}

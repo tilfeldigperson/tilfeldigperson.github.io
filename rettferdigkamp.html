@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>stein, saks pappir</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="rettferdigkampstyle.css">
+    </head>
+    <body>
+      <h1>Stein, Saks, Papir</h1>
+      <div id = "spillerpoeng">
+      <h2 id = spillerresultatvis>Spiller: </h2><h2 id = "spilerpoengvis">Velg ett alternativ til å begynne</h2></div>
+      <div id="Maskinpoeng">
+      <h2 id = maskinresultatvis>Maskin: </h2><h2 id = "maskinpoengvis"></h2>
+       </div>
+       <h2>
+        <a href="index.html"><button id = return>Tilbake</button></a>
+        <br>
+        <button id = "restart" hidden="true">start på nytt</button></h2>
+          <div id="visning">
+          <img id = "brukervalg"src="scissors.png" alt=""> <!--viser brukerens valg-->
+          <img id = "maskinvisning"src="scissors.png" alt=""> <!-- viser maskinens valg-->
+        </div>
+        <div id = center>
+      <input id = "stein"type="image" src="rock.png" alt=""> <!-- Steinbilde -->
+      <input id = "papir"type="image" src="paper.png" alt=""> <!-- Papirbilde -->
+      <input id = "saks"type="image" src="scissors.png" alt=""> <!-- Saksbilde-->
+      </div>
+        <script src="rettferdigkampjs.js" async defer></script>
+    </body>
+</html>
